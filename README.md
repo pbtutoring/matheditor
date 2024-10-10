@@ -22,7 +22,7 @@ npm i https://github.com/pbtutoring/matheditor.git
 ### Example
 
 ```tsx
-import { Latex, MathEditor } from "matheditor";
+import { MathEditor } from "matheditor";
 import { useState } from "react";
 import "matheditor/dist/style.css";
 
@@ -36,10 +36,6 @@ function MyComponent() {
         onChange={(newLatex) => setLatex(newLatex)}
         placeholder="My Latex Input"
       />
-
-      <p className="font-serif">
-        <Latex>{latex.replaceAll("\n", "<br />")}</Latex>
-      </p>
     </div>
   );
 }

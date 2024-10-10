@@ -1,1 +1,1 @@
-{"root":["./lib/index.ts","./lib/utils.ts","./lib/vite-env.d.ts","./lib/components/externallinkicon.tsx","./lib/components/latex.tsx","./lib/components/matheditor.tsx"],"version":"5.6.3"}
+{"root":["./lib/index.ts","./lib/utils.ts","./lib/vite-env.d.ts","./lib/components/editicon.tsx","./lib/components/externallinkicon.tsx","./lib/components/imageicon.tsx","./lib/components/latex.tsx","./lib/components/matheditor.tsx"],"version":"5.6.3"}
