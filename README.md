@@ -40,3 +40,12 @@ function MyComponent() {
   );
 }
 ```
+
+### Options
+
+- `value` (`string`): Value state
+- `onChange` (`(newValue: string) => any`): Triggers any time content inside editor changes.
+- `placeholder` (`string?`): Placeholder text
+- `showLatexHelp` (`boolean?`) (default = `true`): Should the editor show the Latex help link at the bottom when focused in edit mode?
+- `showInsertButtons` (`boolean?`) (default = `true`): Should the editor show the Latex insert buttons when focused in edit mode?
+- `className` (`string?`): Added classnames
