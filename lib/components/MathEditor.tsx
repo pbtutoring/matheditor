@@ -27,6 +27,9 @@ function MathEditor({
 
   const insertFraction = () => insertLatex("$\\frac{a}{b}$");
   const insertPower = () => insertLatex("$a^b$");
+  const insertLine = () => insertLatex("$\\overline{ab}$");
+  const insertTriangle = () => insertLatex("$\\triangle$");
+  const insertAngle = () => insertLatex("$\\measuredangle$");
 
   const handleOnChange = ({
     target: { value },
@@ -61,6 +64,24 @@ function MathEditor({
         >
           <Latex>{"$a^b$"}</Latex>
         </button>
+        <button
+          className="flex h-10 w-10 items-center justify-center rounded-md border bg-white shadow-md hover:bg-gray-50 hover:shadow-lg"
+          onClick={insertLine}
+        >
+          <Latex>{"$\\overline{ab}$"}</Latex>
+        </button>
+        <button
+          className="flex h-10 w-10 items-center justify-center rounded-md border bg-white shadow-md hover:bg-gray-50 hover:shadow-lg"
+          onClick={insertTriangle}
+        >
+          <Latex>{"$\\triangle$"}</Latex>
+        </button>
+        <button
+          className="flex h-10 w-10 items-center justify-center rounded-md border bg-white shadow-md hover:bg-gray-50 hover:shadow-lg"
+          onClick={insertAngle}
+        >
+          <Latex>{"$\\measuredangle$"}</Latex>
+        </button>
       </div>
       <textarea
         className={cn(
@@ -77,7 +98,7 @@ function MathEditor({
         onClick={() => textareaRef.current?.focus()}
       >
         <button
-          className="flex cursor-pointer flex-row items-center justify-center gap-2 rounded-md px-2 py-1 duration-100 hover:bg-black/5"
+          className="flex cursor-pointer flex-row items-center justify-center gap-2 rounded-md px-2 py-1 duration-100 hover:bg-black/5 w-full"
           onClick={() =>
             window.open("https://quickref.me/latex.html", "_blank")
           }

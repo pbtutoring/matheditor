@@ -2,6 +2,12 @@
 
 > A simple LaTeX math input editor component.
 
+---
+
+![Preview Image](https://i.ibb.co/x2TLRxf/Screenshot-2024-10-10-at-10-09-37-AM.png)
+
+---
+
 ### Requirements
 
 - React (duh)
@@ -16,7 +22,8 @@ npm i https://github.com/pbtutoring/matheditor.git
 ### Example
 
 ```tsx
-import { MathEditor, Latex } from "matheditor";
+import { Latex, MathEditor } from "matheditor";
+import { useState } from "react";
 import "matheditor/dist/style.css";
 
 function MyComponent() {
@@ -30,8 +37,8 @@ function MyComponent() {
         placeholder="My Latex Input"
       />
 
-      <p>
-        <Latex>{latex}</Latex>
+      <p className="font-serif">
+        <Latex>{latex.replaceAll("\n", "<br />")}</Latex>
       </p>
     </div>
   );
