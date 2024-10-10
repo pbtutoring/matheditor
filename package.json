@@ -1,6 +1,11 @@
 {
   "name": "matheditor",
-  "private": true,
+  "author": {
+    "name": "Pulliam-Bivens Tutoring",
+    "url": "https://pbtutoring.com"
+  },
+  "license": "MIT",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.umd.js",
