@@ -4,7 +4,7 @@
 
 ---
 
-![Preview Image](https://i.ibb.co/x2TLRxf/Screenshot-2024-10-10-at-10-09-37-AM.png)
+![Preview GIF](https://i.ibb.co/bgF4W2G/CPT2410101313-448x321.gif)
 
 ---
 
